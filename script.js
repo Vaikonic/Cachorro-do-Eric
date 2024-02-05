@@ -291,7 +291,7 @@ function init() {
     }
   
     const checkBoundaryAndUpdateDogPos = (x, y, dog, dogData) =>{
-      const lowerLimit = -40 // buffer from window edge
+      const lowerLimit = -40 
       const upperLimit = 40
       if (x > lowerLimit && x < (elements.body.clientWidth - upperLimit)){
         dogData.pos.x = x + 48
